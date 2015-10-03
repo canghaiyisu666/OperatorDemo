@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<request>
+        <jobinstanceid>xxxMRtestxxx</jobinstanceid>
+        <context>
+          <property name="userName" value="test" />
+          <property name="queueName" value="default" />
+          <property name="processId" value="hPuoWRXHRsCq3dfajatMzA" />
+          <property name="jobId" value="jobID" />
+          <property name="hiveServerAddress" value="172.16.8.203:10000" />
+          <property name="departmentId" value="2000006004"/>
+          <property name="tempDatabaseName" value="test" />
+          <property name="departmentDBName" value="result_xx" />
+          <property name="tempHdfsBasePath" value="/test/udps" />
+          <property name="resultHdfsBasePath" value="/test/udps"/>          
+          <property name="resultDatabaseName" value="test"/>
+        </context>
+
+        <operator name="LowerUpperCaseConvert" alias="MR大小写转换示例算子" class="MR.T.LowerUpperCaseConvert">
+            <parameter name="field1">name</parameter>
+        </operator>
+
+        <datasets>
+            <dataset name="inport1">
+                   <row>test.udps</row>
+            </dataset>
+        </datasets>
+</request>
+

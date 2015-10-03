@@ -1,0 +1,13 @@
+<?xml version="1.0" encodeing="UTF-8"?>
+<operatordescriptor>
+	<name>MR.T.LowerUpperCaseConvert</name>
+	<alias>大小写转换示例</alias>
+	<biztype>Special</biztype>
+	<version>1.0.0</version>
+	<devlang>Java</devlang>
+	<tags>大小写;示例</tags>
+	<provider>中科院信工所</provider>
+	<descriptor>基于mapreduce的大小写转换固定列的示例算子</descriptor>
+	<instruction>inport1为输入数据库名和表名。</instruction>
+	<metagetter>iie.bdd.metaget.LowerUpperCaseMG</metagetter>
+</operatordescriptor>
